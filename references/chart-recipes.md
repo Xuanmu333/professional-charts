@@ -50,6 +50,8 @@ Design rules:
 - Distinguish totals from drivers through fill, outline, or weight.
 - Use signs and data labels. Do not make color the only positive/negative cue.
 - Draw thin connectors to preserve the bridge logic.
+- When showing the net change from the starting total to the ending total, reserve an annotation column to the right of the ending total. Extend a horizontal dashed guide from the top endpoint of each total to that column, join the two guide levels with a vertical double-ended arrow, and place the absolute difference plus any valid relative difference beside the arrow.
+- Do not represent the start-to-end net change with a curved, arcing, or dotted line over the intermediate drivers. The net-change annotation compares the two total endpoints; it is not a trend path.
 - Keep subtotal and total columns on the baseline.
 - Allow a delta to cross zero when the data requires it.
 - Use a horizontal waterfall only when category labels or slide geometry clearly benefit.

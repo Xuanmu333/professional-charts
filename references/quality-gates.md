@@ -16,6 +16,7 @@ Apply every relevant gate before delivering a chart. Passing a file-format check
 
 - Bar and column lengths use a zero baseline unless a visible, justified axis break is present.
 - Related charts that invite comparison use the same scale.
+- A waterfall net-change annotation uses two horizontal dashed endpoint guides and a vertical double-ended difference arrow outside the bridge; it does not arc across the driver bars.
 - Bubble magnitude is encoded by area.
 - Dual axes are clearly labeled and cannot be mistaken for a common scale.
 - Actual and forecast periods are distinguishable without relying on color alone.
@@ -26,6 +27,7 @@ Apply every relevant gate before delivering a chart. Passing a file-format check
 - No label, title, source, arrow, marker, or legend overlaps another object.
 - No text is clipped, wrapped awkwardly, or pushed outside the slide or canvas.
 - Direct labels clearly map to their marks; leader lines do not cross unnecessarily.
+- No leader arrow points to a single bar that is already identified by accent color and a direct label unless the arrow encodes an additional, nonredundant relationship.
 - Numbers use consistent precision and abbreviations.
 - The chart remains legible in a full-slide render, not only when zoomed in.
 - Decorative effects do not compete with the data.
@@ -42,9 +44,9 @@ Apply every relevant gate before delivering a chart. Passing a file-format check
 
 - Required chart marks, labels, and annotations remain editable in the requested source format.
 - The artifact contains no rasterized substitute for an editable chart unless the user explicitly requested a flat image.
-- PowerPoint output opens successfully and includes the expected slide count.
-- SVG output has a valid view box and editable text or vector elements.
-- The rendered preview matches the editable source with no missing fonts, shifted objects, or changed values.
+- The Google Slides URL opens successfully and the presentation includes the expected slide count.
+- Bars, labels, lines, arrows, and annotations are separate native Google Slides shapes or text boxes rather than a flattened chart image.
+- The high-resolution PNG preview matches the online Google Slide with no missing fonts, shifted objects, or changed values.
 - Describe the result by its chart type, analytical purpose, and editability without attributing it to a specific charting tool.
 
 If a gate fails, fix the artifact and render it again. If the available data or output format makes a required gate impossible, disclose that limitation instead of hiding it.

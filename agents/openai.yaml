@@ -1,4 +1,4 @@
 interface:
   display_name: "Professional Charts"
-  short_description: "制作可编辑的咨询式商业图表与关键标注"
-  default_prompt: "使用 $professional-charts，把我的数据制作成一张可编辑、结论清晰的专业商业图表。"
+  short_description: "在 Google Slides 中制作可编辑的专业商业图表"
+  default_prompt: "使用 $professional-charts，把我的数据制作成一张在线可编辑、结论清晰的 Google Slides 商业图表。"
