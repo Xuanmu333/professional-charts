@@ -1,0 +1,50 @@
+# Quality gates
+
+Apply every relevant gate before delivering a chart. Passing a file-format check is not enough; inspect the rendered artifact.
+
+## Data correctness
+
+- Recalculate displayed totals, subtotals, shares, differences, and CAGR from the source values.
+- Verify units, currencies, time intervals, category order, signs, and denominators.
+- Confirm that a waterfall reconciles its start, drivers, subtotals, and final total.
+- Confirm that percentage stacks total approximately 100% and explain any material exception.
+- Confirm that Mekko column widths sum to the plot width and segment heights fill each category as intended.
+- Confirm that Gantt bars and milestones align with the stated dates.
+- Do not show a percentage change from a zero denominator or a conventional CAGR across zero or negative endpoints.
+
+## Visual integrity
+
+- Bar and column lengths use a zero baseline unless a visible, justified axis break is present.
+- Related charts that invite comparison use the same scale.
+- Bubble magnitude is encoded by area.
+- Dual axes are clearly labeled and cannot be mistaken for a common scale.
+- Actual and forecast periods are distinguishable without relying on color alone.
+- Color meaning remains consistent, and the emphasized mark is the one that supports the title.
+
+## Readability
+
+- No label, title, source, arrow, marker, or legend overlaps another object.
+- No text is clipped, wrapped awkwardly, or pushed outside the slide or canvas.
+- Direct labels clearly map to their marks; leader lines do not cross unnecessarily.
+- Numbers use consistent precision and abbreviations.
+- The chart remains legible in a full-slide render, not only when zoomed in.
+- Decorative effects do not compete with the data.
+
+## Message fidelity
+
+- The title matches what the data actually supports.
+- The main comparison can be identified without reading a long paragraph.
+- Every analytical annotation adds information rather than repeating the title.
+- Caveats that could change the conclusion remain visible.
+- Sources and the scope of the data are present when known.
+
+## Editability and delivery
+
+- Required chart marks, labels, and annotations remain editable in the requested source format.
+- The artifact contains no rasterized substitute for an editable chart unless the user explicitly requested a flat image.
+- PowerPoint output opens successfully and includes the expected slide count.
+- SVG output has a valid view box and editable text or vector elements.
+- The rendered preview matches the editable source with no missing fonts, shifted objects, or changed values.
+- Describe the result as think-cell-style unless it is a verified native think-cell object.
+
+If a gate fails, fix the artifact and render it again. If the available data or output format makes a required gate impossible, disclose that limitation instead of hiding it.
