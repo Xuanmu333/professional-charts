@@ -1,6 +1,6 @@
 # Visual grammar
 
-Use this reference for every think-cell-style chart. These rules describe what must be visible in the final chart, independent of the tool used to create it.
+Use this reference for every professional business chart. These rules describe what must be visible in the final chart, independent of the tool used to create it.
 
 ## 1. Message and reading path
 

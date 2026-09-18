@@ -1,13 +1,11 @@
 ---
-name: thinkcell-style-charts
-description: Create, edit, or critique editable business charts with a think-cell-inspired visual grammar for PowerPoint, SVG, or PNG. Use for think-cell style, consulting-style or management charts, especially waterfall, Mekko, Gantt, variance, CAGR, directly labeled, or insight-led charts. Do not use for decorative infographics with no quantitative chart.
+name: professional-charts
+description: Create, edit, or critique editable, decision-ready business charts for PowerPoint, SVG, or PNG. Use for professional, consulting-style, or management charts, especially waterfall, Mekko, Gantt, variance, CAGR, directly labeled, or insight-led charts. Do not use for decorative infographics with no quantitative chart.
 ---
 
-# Think-cell-style charts
+# Professional charts
 
-Create decision-ready charts whose business meaning is visible in the final artifact. Reproduce the visual grammar, not the think-cell software or file format.
-
-Never state or imply that an output is a native think-cell object unless it was actually created with think-cell. Describe other outputs as “think-cell-style” or “think-cell-inspired.”
+Create decision-ready charts whose business meaning is visible in the final artifact. Apply a professional business-chart visual grammar independent of the tool or file format used to create it.
 
 ## Route the request
 
@@ -54,4 +52,4 @@ Read and apply [quality gates](references/quality-gates.md) before delivery.
 
 Render the final artifact and inspect it visually. Correct overlaps, clipped labels, misleading scales, weak contrast, excessive decimals, and ambiguous annotations. For PowerPoint, deliver the editable `.pptx` and a rendered preview. For standalone chart output, prefer editable `.svg` plus `.png` when practical.
 
-When reporting the result, state the chart type, the main encoded comparison, and any limitation that affects interpretation. Do not claim visual similarity alone proves that think-cell created the chart.
+When reporting the result, state the chart type, the main encoded comparison, and any limitation that affects interpretation.

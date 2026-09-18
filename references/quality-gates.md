@@ -45,6 +45,6 @@ Apply every relevant gate before delivering a chart. Passing a file-format check
 - PowerPoint output opens successfully and includes the expected slide count.
 - SVG output has a valid view box and editable text or vector elements.
 - The rendered preview matches the editable source with no missing fonts, shifted objects, or changed values.
-- Describe the result as think-cell-style unless it is a verified native think-cell object.
+- Describe the result by its chart type, analytical purpose, and editability without attributing it to a specific charting tool.
 
 If a gate fails, fix the artifact and render it again. If the available data or output format makes a required gate impossible, disclose that limitation instead of hiding it.
