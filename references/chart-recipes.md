@@ -22,6 +22,7 @@ Use for precise length comparisons.
 - Use clustered bars only when each series needs direct comparison at each category.
 - Use stacked bars for totals plus composition; use 100% stacks only when share is the message.
 - Label important segments and totals directly. Remove redundant axes when every bar is labeled.
+- When a comparison guide or bracket starts from a bar or column endpoint, anchor it at the outer mark edge and route it around the value-label no-draw zone. Never extend the guide through a label centered on the mark.
 - Create intentional category gaps to separate historical and forecast periods or logical groups.
 - For a butterfly chart, place two horizontal bar plots back to back, use the same scale, and keep category labels on the shared center line.
 
@@ -69,6 +70,7 @@ Use a line for trends and an area chart for changing totals or composition.
 - Show missing values honestly. Do not interpolate across a meaningful data gap without disclosure.
 - Use a value line for targets and a separator for actual versus forecast periods.
 - Use a CAGR arrow only across valid positive endpoints and elapsed periods.
+- When line or area endpoints are directly labeled, offset any difference, CAGR, or leader anchor beyond the label bounding box so the annotation line cannot cross the endpoint value or series name.
 - In an area chart, order series so important or stable components remain readable.
 
 For a combination chart, use columns for magnitude and a line for a rate, index, or reference series. Add a second axis only when the units differ and a common scale cannot express the comparison honestly.

@@ -26,7 +26,7 @@ Apply every relevant gate before delivering a chart. Passing a file-format check
 
 - No label, title, source, arrow, marker, or legend overlaps another object.
 - No text is clipped, wrapped awkwardly, or pushed outside the slide or canvas.
-- No comparison line, connector, or arrow touches or crosses a value label. Waterfall start and end totals retain a visible gap between their labels and all endpoint guides.
+- Across all chart types, no endpoint guide, comparison bracket, connector, arrow, or leader touches or crosses a value label. Verify visible clearance at bar and column ends, line and area endpoints, labeled scatter or bubble points, combination-chart marks, Gantt annotations, and waterfall totals.
 - Direct labels clearly map to their marks; leader lines do not cross unnecessarily.
 - No leader arrow points to a single bar that is already identified by accent color and a direct label unless the arrow encodes an additional, nonredundant relationship.
 - Numbers use consistent precision and abbreviations.
