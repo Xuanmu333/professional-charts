@@ -1,6 +1,6 @@
 ---
 name: professional-charts
-description: Create, edit, or critique editable, decision-ready business charts directly in Google Slides. Use for professional, consulting-style, or management charts, especially waterfall, Mekko, Gantt, variance, CAGR, directly labeled, or insight-led charts. Do not use for decorative infographics with no quantitative chart.
+description: Create, edit, or critique editable, decision-ready business charts. Use for professional, consulting-style, or management charts, especially waterfall, Mekko, Gantt, variance, CAGR, directly labeled, or insight-led charts. Do not use for decorative infographics with no quantitative chart.
 ---
 
 # Professional charts
@@ -10,9 +10,9 @@ Create decision-ready charts whose business meaning is visible in the final arti
 ## Route the request
 
 1. Determine the data, comparison being made, and desired takeaway.
-2. If the output format is unspecified or the user requests a presentation or slides, default to creating an editable Google Slides presentation with `workspace__create_presentation` and `workspace__batch_update_presentation`.
-3. Build the chart as native shapes and text boxes inside the newly created Google Slide so every value, label, bar, line, and annotation is fully editable.
-4. For an existing Google Slides deck or brand template, preserve its theme, fonts, margins, and established color meanings before applying the defaults in this skill.
+2. Honor the user's requested output format and active workspace. Do not assume a presentation platform, cloud service, or creation tool when none is specified.
+3. Keep chart marks, values, labels, lines, and annotations editable whenever the destination format supports editable objects.
+4. For an existing artifact or brand template, preserve its theme, fonts, margins, and established color meanings before applying the defaults in this skill.
 5. Do not use image generation for quantitative marks, labels, or annotations. Generate them from the supplied data so that every visible value is auditable.
 
 ## Before drawing
@@ -39,8 +39,7 @@ Prefer the simplest chart that carries the intended comparison. Do not use Mekko
 
 ## Build the artifact
 
-- Create the online presentation in Google Drive with `workspace__create_presentation`, then construct or update the slide with `workspace__batch_update_presentation`.
-- Use native Google Slides shapes, lines, and text boxes for every chart mark. Do not generate a local presentation file or use one as an import intermediary.
+- Use editable native chart objects or vector shapes supported by the destination format.
 - Derive the position and dimensions of every data-bearing shape from shared plot bounds and scales. Do not place bars, lines, arrows, or labels by eye.
 - Keep title, chart marks, annotations, source note, and any legend as separate editable objects.
 - Use direct labels by default. Keep a legend only when direct labeling would make the chart less readable.
@@ -51,10 +50,6 @@ Prefer the simplest chart that carries the intended comparison. Do not use Mekko
 
 Read and apply [quality gates](references/quality-gates.md) before delivery.
 
-1. Create the presentation in Google Drive.
-2. Output the direct clickable Google Slides URL to the user.
-3. Also provide a high-resolution PNG preview of the slide.
-
-Inspect the PNG preview before delivery. Correct overlaps, clipped labels, misleading scales, weak contrast, excessive decimals, and ambiguous annotations in Google Slides, then regenerate the preview.
+Render or capture a preview when the destination supports it. Inspect the final chart visually and correct overlaps, clipped labels, misleading scales, weak contrast, excessive decimals, and ambiguous annotations before delivery.
 
 When reporting the result, state the chart type, the main encoded comparison, and any limitation that affects interpretation.

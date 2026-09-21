@@ -26,6 +26,7 @@ Apply every relevant gate before delivering a chart. Passing a file-format check
 
 - No label, title, source, arrow, marker, or legend overlaps another object.
 - No text is clipped, wrapped awkwardly, or pushed outside the slide or canvas.
+- No comparison line, connector, or arrow touches or crosses a value label. Waterfall start and end totals retain a visible gap between their labels and all endpoint guides.
 - Direct labels clearly map to their marks; leader lines do not cross unnecessarily.
 - No leader arrow points to a single bar that is already identified by accent color and a direct label unless the arrow encodes an additional, nonredundant relationship.
 - Numbers use consistent precision and abbreviations.
@@ -44,9 +45,9 @@ Apply every relevant gate before delivering a chart. Passing a file-format check
 
 - Required chart marks, labels, and annotations remain editable in the requested source format.
 - The artifact contains no rasterized substitute for an editable chart unless the user explicitly requested a flat image.
-- The Google Slides URL opens successfully and the presentation includes the expected slide count.
-- Bars, labels, lines, arrows, and annotations are separate native Google Slides shapes or text boxes rather than a flattened chart image.
-- The high-resolution PNG preview matches the online Google Slide with no missing fonts, shifted objects, or changed values.
+- The artifact opens successfully in its target application and contains the expected chart content.
+- Bars, labels, lines, arrows, and annotations remain separate editable objects supported by the destination rather than a flattened chart image.
+- Any delivered preview matches the editable source with no missing fonts, shifted objects, or changed values.
 - Describe the result by its chart type, analytical purpose, and editability without attributing it to a specific charting tool.
 
 If a gate fails, fix the artifact and render it again. If the available data or output format makes a required gate impossible, disclose that limitation instead of hiding it.

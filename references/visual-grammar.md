@@ -56,6 +56,7 @@ Verify that all displayed shares use the intended denominator. If rounding preve
 - Use a value line for a target, average, threshold, or benchmark.
 - Use a forecast separator or background distinction for actual versus forecast periods.
 - Use straight, orthogonal geometry for endpoint comparisons. Do not use a curved, arcing, or dotted path across the plot unless the path itself encodes an actual trajectory.
+- Keep every comparison line, connector, arrow, and leader outside value-label bounding boxes. Preserve a visible gap of at least half the label height; no line may touch, cross, or visually split a number.
 - When accent color and a direct value label already identify a focal bar, do not add a leader arrow that merely points to that bar. Put any necessary comparison text in the title, subtitle, or adjacent annotation without a pointer.
 - Do not repeat the same message in a title, callout, arrow, and footnote.
 
