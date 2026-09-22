@@ -92,6 +92,9 @@ Apply color semantically:
 
 - Prefer a compact plot with direct labels over a large empty plot surrounded by legends and separate callout boxes.
 - Keep enough whitespace around the title, plot, and source to preserve grouping.
+- When a subtitle is present, place the title and subtitle in separate text blocks so their line height and vertical spacing can be controlled independently. Do not simulate the hierarchy with two tightly stacked lines in one text box.
+- Keep a vertical gap of approximately `0.5–0.75 ×` the subtitle line height between the title bounding box and subtitle bounding box. Preserve at least one subtitle line height between the subtitle and the chart or legend below it.
+- For wrapped text, use title line height of approximately `1.10–1.20 ×` its font size and subtitle line height of approximately `1.20–1.35 ×` its font size. If space is tight, move or reduce the plot area before compressing these intervals.
 - Use the presentation theme font. Without a template, use a widely available sans serif font.
 - Follow the destination artifact's typography guidance. For a presentation, keep chart labels readable when projected and avoid text below 17 pt unless the chart density makes a smaller size unavoidable and the rendered result remains legible.
 - Make totals, endpoints, or the main comparison slightly stronger through weight or accent. Do not bold every label.

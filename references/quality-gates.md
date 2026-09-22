@@ -26,6 +26,8 @@ Apply every relevant gate before delivering a chart. Passing a file-format check
 
 - No label, title, source, arrow, marker, or legend overlaps another object.
 - No text is clipped, wrapped awkwardly, or pushed outside the slide or canvas.
+- When a subtitle exists, the title and subtitle remain visually separate, with a gap of at least half the subtitle line height; the subtitle also retains at least one line height of whitespace before the chart or legend.
+- Multi-line titles and subtitles use readable line height rather than compressed leading, and the plot area has been moved or reduced instead of squeezing the title block.
 - Across all chart types, no endpoint guide, comparison bracket, connector, arrow, or leader touches or crosses a value label. Verify visible clearance at bar and column ends, line and area endpoints, labeled scatter or bubble points, combination-chart marks, Gantt annotations, and waterfall totals.
 - Direct labels clearly map to their marks; leader lines do not cross unnecessarily.
 - No leader arrow points to a single bar that is already identified by accent color and a direct label unless the arrow encodes an additional, nonredundant relationship.
