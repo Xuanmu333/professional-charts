@@ -69,6 +69,9 @@ Use a line for trends and an area chart for changing totals or composition.
 - Use markers only when individual observations matter or the series is sparse.
 - Show missing values honestly. Do not interpolate across a meaningful data gap without disclosure.
 - Use a value line for targets and a separator for actual versus forecast periods.
+- For a launch, intervention, or other event, align the separator to the supplied period. If the event is central to the message, directly label the focal event-period values and the comparison endpoints; state the exact comparison interval for any displayed change.
+- A lightly shaded post-event region may improve before/after scanning, but label it as an observation period and avoid causal wording unless causality is supported separately.
+- Before writing that a trend accelerated, slowed, steepened, or flattened, compare the pre- and post-period change per elapsed interval or an appropriate fitted slope. Treat an event-period jump as a level shift unless subsequent intervals demonstrate a changed rate.
 - Use a CAGR arrow only across valid positive endpoints and elapsed periods.
 - When line or area endpoints are directly labeled, offset any difference, CAGR, or leader anchor beyond the label bounding box so the annotation line cannot cross the endpoint value or series name.
 - In an area chart, order series so important or stable components remain readable.
@@ -125,9 +128,9 @@ Use a calendar-aligned grid with activity rows.
 - Use consistent status colors and include text or symbols so the chart does not depend on color alone.
 - Show dependencies only when they affect the critical reading of the schedule. Excessive connectors obscure the plan.
 
-## Native objects versus editable shapes
+## Chart objects versus vector shapes
 
-- Prefer a native chart when standard chart semantics and ordinary labels are sufficient.
-- Prefer editable shapes for advanced waterfall bridges, Mekko geometry, Gantt items, custom difference/CAGR arrows, and deliberate axis breaks.
+- Prefer native chart objects when the destination format supports the required chart semantics and labels.
+- Prefer vector shapes for advanced waterfall bridges, Mekko geometry, Gantt items, custom difference/CAGR arrows, and deliberate axis breaks.
 - When using shapes, derive every position from the same plot bounds and scale mapping. Do not eyeball bar heights or annotation anchors.
-- Group related marks only when grouping does not prevent later editing.
+- Group related marks only when grouping does not make the chart harder to revise in its destination format.
